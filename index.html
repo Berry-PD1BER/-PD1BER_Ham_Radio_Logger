@@ -1,5 +1,5 @@
-# Shiny Radio Logbook
-# This Shiny application provides a simple interface for general-purpose
+# PD1BER Ham Radio Logger
+# This PD1BER Ham Radio Logger application provides a simple interface for general-purpose
 # Ham Radio logging.
 #
 # Features:
@@ -13,7 +13,7 @@
 
 
 # Load required libraries
-library(shiny)
+library(PD1BER Ham Radio Logger)
 library(DT)
 
 # List of modes available
@@ -21,7 +21,7 @@ modeList <- c("CW", "SSB", "AM", "FM", "RTTY", "PSK31", "FT8", "FT4", "JT65", "J
 
 # Build the user interface
 ui <- fluidPage(
-  titlePanel("Shiny Radio Logbook"),
+  titlePanel("PD1BER Ham Radio Logger"),
   tags$head(tags$script(HTML('$(document).on("click", ".edit", function() {Shiny.onInputChange("edit_id", this.id);});'))),
   tags$head(tags$link(rel = "stylesheet", href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")),
   sidebarLayout(
